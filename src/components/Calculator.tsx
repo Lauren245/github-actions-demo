@@ -4,7 +4,7 @@ interface CalculatorState {
   total: number;
   previousTotal: number;
 }
-
+//adding comment to trigger GitHub actions
 export default function Calculator() {
   const [calcState, setCalcState] = useState<CalculatorState>({ total: 0, previousTotal: 0 });
   const [value, setValue] = useState(0);
@@ -15,6 +15,7 @@ export default function Calculator() {
 
   return (
     <div className="calculator">
+      <h2>Simple Calculator</h2>
       <p>
         <input
           type="text"
